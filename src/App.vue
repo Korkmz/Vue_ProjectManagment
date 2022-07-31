@@ -12,13 +12,7 @@
 
       <v-spacer></v-spacer>
 
-          <v-btn
-           color="white"
-           class="ma-2 secondary--text"
-           >
-            <v-icon right dark class="mr-1"> mdi-plus  </v-icon> Add Task
-    </v-btn>
-
+          <AddTaskModal></AddTaskModal>
 
     </v-app-bar>
 
@@ -30,10 +24,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import AddTaskModal from './components/Task/AddTaskModal'
 
 export default Vue.extend({
   name: 'App',
-
+  components: {
+    AddTaskModal
+  },
   data: () => ({
     //
   }),
